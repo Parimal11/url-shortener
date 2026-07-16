@@ -431,7 +431,7 @@ AI was used for:
 
 Every generated suggestion was manually reviewed, validated, modified where necessary, and tested before being incorporated into the final implementation.
 
-A detailed explanation is available in **AI_USAGE_REPORT.md**.
+A detailed explanation of AI usage is available in the [AI Usage Report](AI_USAGE_REPORT.md).
 
 ---
 
