@@ -230,6 +230,31 @@ mvn test
 
 ---
 
+### API Validation Harness
+
+A Python-based validation harness is included under the `tools/` directory.
+
+It performs:
+
+- Functional API testing
+- Edge-case validation
+- Response verification
+- Performance measurement
+- Markdown report generation
+
+Run the Java test suite:
+
+```bash
+mvn test
+```
+
+Run the validation harness:
+
+```bash
+cd tools
+python test_harness.py
+```
+
 # Docker Support
 
 The application uses Spring Boot Docker Compose integration.
@@ -373,9 +398,17 @@ The implementation makes the following assumptions:
 
 ✔ Missing URL
 
+✔ Unsupported Protocol (FTP)
+
 ✔ Duplicate URL
 
 ✔ Duplicate Alias
+
+✔ Invalid Alias Format
+
+✔ SQL Injection Payload
+
+✔ XSS Payload
 
 ✔ Unknown Short Code
 
@@ -444,6 +477,9 @@ mvn clean test
 
 mvn spring-boot:run
 ```
+
+cd tools
+python test_harness.py
 
 The application successfully:
 
